@@ -3,6 +3,7 @@ require 'test_helper'
 require 'generators/react/component_generator'
 
 class Es6ComponentGeneratorTest < Rails::Generators::TestCase
+  include GeneratorsHelper
   destination File.join(Rails.root, 'tmp', 'component_generator_test_output')
   setup :prepare_destination
   tests React::Generators::ComponentGenerator
