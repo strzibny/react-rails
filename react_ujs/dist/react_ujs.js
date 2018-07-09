@@ -307,6 +307,8 @@ var ReactRailsUJS = {
 
       console.log("Window reference:" + node.getAttribute('data-window-ref'));
 
+      props["ref"] = function (Component) { window.mojeKomponenta = Component };
+
       if (!constructor) {
         var message = "Cannot find component: '" + className + "'"
         if (console && console.log) {
