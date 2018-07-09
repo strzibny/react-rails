@@ -42,8 +42,7 @@ module React
             data[:hydrate] = 't' if prerender_options
           end
         end
-        puts '*************************', 'setting window_ref', options[:window_ref]
-        html_options[:window_ref] = options[:window_ref] if options[:window_ref]
+        html_options[:data][:window_ref] = options[:window_ref] if options[:window_ref]
         html_tag = html_options[:tag] || :div
 
         # remove internally used properties so they aren't rendered to DOM
