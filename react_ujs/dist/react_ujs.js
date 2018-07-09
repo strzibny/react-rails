@@ -309,6 +309,8 @@ var ReactRailsUJS = {
 
       props["ref"] = function (Component) { window.mojeKomponenta = Component };
 
+      alert("mounting...");
+
       if (!constructor) {
         var message = "Cannot find component: '" + className + "'"
         if (console && console.log) {
