@@ -87,6 +87,7 @@ var ReactRailsUJS = {
       var props = propsJson && JSON.parse(propsJson);
       var hydrate = node.getAttribute(ujs.RENDER_ATTR);
 
+
       if (!constructor) {
         var message = "Cannot find component: '" + className + "'"
         if (console && console.log) {
